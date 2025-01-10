@@ -77,7 +77,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #06ffff; /* Tomato color */
+  background-color: #06ffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -86,7 +86,7 @@ body {
 }
 
 .reset-button:hover {
-  background-color: #13f9ed; /* Slightly darker shade of tomato */
+  background-color: #13f9ed;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: scale(1.05);
 }
