@@ -1,0 +1,92 @@
+body {
+  font-family: 'Helvetica', sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game {
+  max-width: 340px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.status {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 24px;
+  font-weight: bold;
+  border: 2px solid #bbb;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.cell:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.cell.x {
+  color: #e57373;
+  background-color: #ffebee;
+}
+
+.cell.o {
+  color: #4db6ac;
+  background-color: #e0f7f1;
+}
+
+.winning-cell {
+  background-color: #ffe073;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { background-color: #ffeb3b; }
+  50% { background-color: #fff176;}
+}
+.reset-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #06ffff; /* Tomato color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reset-button:hover {
+  background-color: #13f9ed; /* Slightly darker shade of tomato */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
